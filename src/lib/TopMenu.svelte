@@ -3,9 +3,9 @@
     let isPressed = false;
     export let selectcomp;
     let menuItems = [
-        {label: "Страница 1" },
-        {label: "Страница 2" },
-        {label: "Страница 3" },
+        {label: "Svelte Generator" },
+        {label: "Bla" },
+        {label: "Bla Bla" },
         // Add more items here...
     ];
 </script>

@@ -47,36 +47,17 @@
   <div class="holy-grail">
     <header>
       <!-- Header content -->
-      <nav>
-  <!--    <ul>
-          <li><a class:flt={selected === options[0]} on:click={(c)=>SelectComp(0)} href="#">Menu item 1</a></li>
-          <li><a class:flt={selected === options[1]} on:click={(c)=>SelectComp(1)} href="#">Menu item 2</a></li>
-          <li><a class:flt={selected === options[2]} on:click={(c)=>SelectComp(2)} href="#">Menu item 3</a></li>
-          <li><a class:flt={selected === options[3]} on:click={(c)=>SelectComp(3)} href="#">Menu item 4</a></li>
-        </ul> -->
+      <nav> 
         <TopMenu selectcomp = {SelectComp}/> 
       </nav>
     </header>
     <div class="container">
-      <div class="left-sidebar">
-        <!-- Left sidebar content -->
-        <h2>Левая панель</h2>
-        <p>Текст левой панели.</p>
-      </div>
       <div class="main-content">
-        <!-- Main content area -->
-        <h1>Центральная панель</h1>
-  
         <!-- Динамические компоненты -->
         <svelte:component 
            this={selected.component} 
            app_function={SendMessage} />
   
-      </div>
-      <div class="right-sidebar">
-        <!-- Right sidebar content -->
-        <h2>Правая панель</h2>
-        <DetectMessage messagefrom={current_message}/>
       </div>
     </div>
     <footer>
@@ -122,24 +103,8 @@
     flex: 1;
   }
   
-  .left-sidebar {
-    flex: 1;
-    max-width: 250px;
-    margin-right: 20px;
-    background-color: #f7f7f7;
-    padding: 20px;
-  }
-  
   .main-content {
     flex: 3;
-    padding: 20px;
-  }
-  
-  .right-sidebar {
-    flex: 1;
-    max-width: 250px;
-    margin-left: 20px;
-    background-color: #f7f7f7;
     padding: 20px;
   }
   
@@ -154,24 +119,14 @@
   
   /* Responsive styles */
   @media (max-width: 1200px) {
-    .left-sidebar, .right-sidebar {
-      flex: 0 0 200px;
-    }
   }
   
   @media (max-width: 992px) {
-    .left-sidebar, .right-sidebar {
-      flex: 0 0 150px;
-    }
   }
   
   @media (max-width: 768px) {
     .container {
       flex-direction: column;
-    }
-    .left-sidebar, .right-sidebar {
-      max-width: 100%;
-      margin: 20px 0;
     }
     .main-content {
       flex: 1;
