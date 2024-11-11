@@ -4,8 +4,6 @@
   import Comp3 from './lib/Comp3.svelte'
   import TopMenu from './lib/TopMenu.svelte'
   
-  import DetectMessage from './lib/Detector.svelte'
-  
   //Массив объектов, содержащий ссылки на 3 компонента
   const options = [
       {  component: Comp1 },

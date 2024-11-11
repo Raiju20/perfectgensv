@@ -1,23 +1,16 @@
 <script>
-    export let app_function
+    export let app_function;
+    import AnimeGif from "./AnimeGif.svelte";
 </script>
 
 <div class='wrapper'>
 <h1>
     Компонент 3
 </h1>
-<div>
-    <button onclick={()=>app_function('Сообщение 3')}>Кнопка 3</button>
-</div>
+<AnimeGif/>
 </div>
 
 <style>
-    button{
-        width: 100px;
-        height:50px;
-        background-color: rgb(16, 29, 87);
-        color:azure
-    }
     .wrapper{
         border:1px solid silver;
         border-radius: 30px;
