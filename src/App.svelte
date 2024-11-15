@@ -58,10 +58,6 @@
   
       </div>
     </div>
-    <footer>
-      <!-- Footer content -->
-      <p>&copy; 2024 Holy Grail Page</p>
-    </footer>
   </div>
   
   </main>

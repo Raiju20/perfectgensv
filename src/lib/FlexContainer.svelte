@@ -29,7 +29,7 @@
         }
         //устанавливаем активность у выбранного (по click) дочернего элемента
         ev.target.id = idx;
-        ev.target.style.background = "yellow";
+        ev.target.style.background = "green";
 
         //передаем активированный элемент родителю (т.е. в App)
         //через функцию activate (получена из App через props)
@@ -82,12 +82,12 @@
     .flex-child {
         align-content: center;
 
-        background: rgb(122, 122, 237);
+        background: #333;
         cursor: pointer;
     }
     .child-label {
         text-align: center;
-        background: yellowgreen;
+        background: floralwhite;
         width: 20px;
         margin: 20px;
     }

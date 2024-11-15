@@ -1,9 +1,8 @@
 <script>
-    export let app_function;
     import AnimeGif from "./AnimeGif.svelte";
 </script>
 
-<div class='wrapper'>
+<div>
 <h1>
     Компонент 2
 </h1>
