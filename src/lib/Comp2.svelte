@@ -1,18 +1,16 @@
+<!-- Comp2.svelte -->
 <script>
-    import AnimeGif from "./AnimeGif.svelte";
-</script>
-
-<div>
-<h1>
-    Компонент 2
-</h1>
-<AnimeGif/>
-</div>
-
-<style>
-    .wrapper{
-        border:1px solid silver;
-        border-radius: 30px;
-        padding:30px;
+    import Value2 from './Value2.svelte';
+  
+    let button;
+  
+    function handleClick() {
+      alert('Кнопка в Comp2 нажата!');
     }
-</style>
+  </script>
+  
+  <button bind:this={button} on:click={handleClick}>
+    Нажми меня в Comp2
+  </button>
+  
+  <Value2 {button} /> <!-- Передаем button как пропс -->
